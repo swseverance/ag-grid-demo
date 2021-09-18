@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./node_modules/ag-grid-community/src/styles/ag-theme-alpine-dark/sass/_ag-theme-alpine-dark-mixin.scss";
+
+// Including this file emits CSS for the Alpine theme. If you want to extend the Alpine theme,
+// @import ag-theme-alpine-dark-mixin.scss and @include ag-theme-alpine-dark($params) instead of using this file.
+
+.ag-theme-alpine-dark {
+  @include ag-theme-alpine-dark(
+    (
+      odd-row-background-color: #222628
+    )
+  );
+}
